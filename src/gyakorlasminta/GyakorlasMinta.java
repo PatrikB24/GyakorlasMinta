@@ -72,7 +72,7 @@ public class GyakorlasMinta {
         return min;
     }
     
-   private static int kivalasztas() { //első
+   private static int kivalasztas() { //első páros
         for (int elem : sorozat) {
             if (elem % 2 == 0) {
                 return elem;
