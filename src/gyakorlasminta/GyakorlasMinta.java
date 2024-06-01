@@ -72,8 +72,13 @@ public class GyakorlasMinta {
         return min;
     }
     
-   private static int kivalasztas() {
-        return 0;
+   private static int kivalasztas() { //első
+        for (int elem : sorozat) {
+            if (elem % 2 == 0) {
+                return elem;
+            }
+        }
+        return -1;
     }
     
     
