@@ -63,22 +63,11 @@ public class GyakorlasMinta {
     }
     
     private static int minimum() {
-        int min = sorozat[0];
-        for (int elem : sorozat) {
-            if (elem < min) {
-                min = elem;
-            }
-        }
-        return min;
+        return 0;
     }
     
    private static int kivalasztas() {
-        for (int elem : sorozat) {
-            if (elem % 2 == 0) {
-                return elem;
-            }
-        }
-        return -1; // Ha nincs páros szám a tömbben
+        return 0;
     }
     
     
