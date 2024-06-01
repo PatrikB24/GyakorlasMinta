@@ -23,6 +23,7 @@ public class GyakorlasMinta {
         konzolraIr("Legnagyobb elem: " + maximum());
         konzolraIr("Legkisebb elem: " + minimum());
         konzolraIr("Kiválasztás: " + kivalasztas());
+        konzolraIr("Lineáris keresés(5): " + linearisKereses(5));
     }
 
     private static int osszegzes(){
@@ -81,6 +82,15 @@ public class GyakorlasMinta {
         return -1;
     }
     
+   private static int linearisKereses(int keresettElem) {
+    for (int i = 0; i < sorozat.length; i++) {
+        if (sorozat[i] == keresettElem) {
+            return i; // visszaadjuk az elem indexét
+        }
+    }
+    return -1; // ha az elem nem található a tömbben
+}
+   
     
     
     private static void konzolraIr(String kimenet) {
