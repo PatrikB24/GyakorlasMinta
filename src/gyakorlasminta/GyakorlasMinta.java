@@ -12,6 +12,7 @@ public class GyakorlasMinta {
        feltolt();
        kiirTomb();
        feladatok();
+        System.out.println("Az összes programozói tétel kiírva!");
         
     }
 
@@ -122,5 +123,5 @@ public class GyakorlasMinta {
         }
         System.out.println();
     }
-
+    
 }
