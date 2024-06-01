@@ -63,7 +63,13 @@ public class GyakorlasMinta {
     }
     
     private static int minimum() {
-        return 0;
+        int min = sorozat[0];
+        for (int elem : sorozat) {
+            if (elem < min) {
+                min = elem;
+            }
+        }
+        return min;
     }
     
    private static int kivalasztas() {
