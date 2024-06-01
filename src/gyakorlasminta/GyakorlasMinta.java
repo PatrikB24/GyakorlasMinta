@@ -35,7 +35,11 @@ public class GyakorlasMinta {
     }
     
     public static boolean eldontes() {
-        return false;
+        int i = 0;
+        while (i < sorozat.length && !(sorozat[i] % 2 == 1)) {
+            i++;
+        }
+        return i < sorozat.length;
     }
     
     private static int szamlalas() {
