@@ -43,19 +43,42 @@ public class GyakorlasMinta {
     }
     
     private static int szamlalas() {
-        return 0;
+        int szamol = 0;
+        for (int elem : sorozat) {
+            if (elem % 2 == 0) {
+                szamol++;
+            }
+        }
+        return szamol;
     }
     
     private static int maximum() {
-        return 0;
+        int max = sorozat[0];
+        for (int elem : sorozat) {
+            if (elem > max) {
+                max = elem;
+            }
+        }
+        return max;
     }
     
     private static int minimum() {
-        return 0;
+        int min = sorozat[0];
+        for (int elem : sorozat) {
+            if (elem < min) {
+                min = elem;
+            }
+        }
+        return min;
     }
     
    private static int kivalasztas() {
-        return 0;
+        for (int elem : sorozat) {
+            if (elem % 2 == 0) {
+                return elem;
+            }
+        }
+        return -1; // Ha nincs páros szám a tömbben
     }
     
     
