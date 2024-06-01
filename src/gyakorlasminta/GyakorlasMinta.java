@@ -18,7 +18,8 @@ public class GyakorlasMinta {
     private static void feladatok() {
         //az összes elemet végig kell nézni, amig nincs meg az eredmény (for ciklusosak)
         konzolraIr("Összegzés: " + osszegzes());
-        konzolraIr("Van páratlan szám: " + eldontes());
+        konzolraIr("Van páratlan szám: " + eldontes1());
+        konzolraIr("Az összes szám páratlan: " + eldontes2());
         konzolraIr("Páros számok száma: " + szamlalas());
         konzolraIr("Legnagyobb elem: " + maximum());
         konzolraIr("Legkisebb elem: " + minimum());
@@ -35,13 +36,22 @@ public class GyakorlasMinta {
         return osszeg;
     }
     
-    public static boolean eldontes() {
+    public static boolean eldontes1() { //van legalább 1 páratlan
         int i = 0;
         while (i < sorozat.length && !(sorozat[i] % 2 == 1)) {
             i++;
         }
         return i < sorozat.length;
     }
+    
+    public static boolean eldontes2() { // minden szám páratlan
+    for (int elem : sorozat) {
+        if (elem % 2 == 0) { // ha a szám páros
+            return false; // akkor nincs minden szám páratlan
+        }
+    }
+    return true; // ha nem találtunk páros számot, akkor minden szám páratlan
+}
     
     private static int szamlalas() {
         int szamol = 0;
